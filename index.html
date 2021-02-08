@@ -1,0 +1,75 @@
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <style type="text/css">#regiration_form fieldset:not(:first-of-type) {display: none;} </style>
+    <title>Formulario</title>
+</head>
+
+<body>
+    <div class="container">
+         <h1>Registro de Empleados</h1>
+         
+    </div>
+
+    <form id="Registro" novalidate action="array.php"  method="post">
+    <fieldset>
+    <h2>Datos Personales </h2>
+    <div class="form-group">
+        <label for="nombre">Nombre</label>
+        <input type="nombre" class="form-control" id="nombre" name="nombre" placeholder="nombre">
+    </div>
+    <div class="form-group">
+         <label for="cedula">Cedula</label>
+         <input type="cedula" class="form-control" id="cedula" name="Cedula" placeholder="cedula">
+    </div>
+   
+        
+    </fieldset>
+    <fieldset>
+    <h2> Datos de la empresa</h2>
+    <div class="form-group">
+        <label for="sueldo">Sueldo</label>
+        <select class="form-control" name="sueldo[]"id="sueldo">
+            <option id="sueldo" value="sueldo" placeholder="sueldo"></option>
+            <option id="sueldo" value="50$">50$</option>
+				<option id="sueldo" value="100$">100$</option>
+				<option id="sueldo" value="200$">200$</option>
+				<option id="sueldo" value="350$">350$</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="departamento">Departamento</label>
+        <select class="form-control" name="departamento[]"id="departamento">
+            <option id="departamento" value="departamento" placeholder="Departamento"></option>
+            <option id="departamento" value="Marketing">Marketing</option>
+				<option id="departamento" value="Recursos humanos">Recursos Humanos</option>
+				<option id="departamento" value="Compras">Compras</option>
+				<option id="departamento" value="Control de Gestión">Control de Gestión</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="lugar">Lugar de trabajo</label>
+        <select class="form-control" name="lugar[]"id="lugar" >
+            <option id="lugar" value="lugar" placeholder="Lugar de Trabajo"></option>
+            <option id="lugar" value="Oficinas">Oficinas</option>
+            <option id="lugar" value="Campo">Campo</option>
+            <option id="lugar" value="Data-Center">Data-Center</option>
+            <option id="lugar" value="Área de Ventas">Área de Ventas</option>
+        </select>
+    </div>
+    </div>
+        <input type="submit" name="submit" class="submit btn btn-success" value="Enviar" id="submit_data" />
+    </fieldset>
+    </form>
+    </div>
+</body>
+</html>
+
+
+	
+</script>
+
+
